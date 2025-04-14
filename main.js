@@ -35,7 +35,7 @@ const teamMembers = [
       }
   }
 ];
-
+lucide.createIcons();
 // Populate team members
 document.addEventListener('DOMContentLoaded', () => {
   const teamSection = document.querySelector('#team .grid');

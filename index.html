@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <script src="https://unpkg.com/lucide@latest"></script>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -94,18 +94,43 @@
       <div
         class="container mx-auto max-w-6xl flex justify-center flex-wrap gap-8 px-4"
       >
-        <a href="./resources/paper.pdf" class="nav-button">Paper</a>
-        <a href="https://github.com/atanukayal/prmlproject" class="nav-button"
-          >Code</a
+        <a
+          href="https://face-id-app-459351987846.asia-south2.run.app/"
+          class="nav-button flex items-center gap-2"
         >
+          <i data-lucide="monitor-smartphone" class="w-5 h-5"></i> Web Demo
+        </a>
+
+        <a
+        href="./resources/report.pdf"
+        download
+        class="nav-button flex items-center gap-2"
+      >
+        <i data-lucide="file-text" class="w-5 h-5"></i> Paper
+      </a>
+      
+        <a
+          href="https://github.com/atanukayal/prmlproject"
+          class="nav-button flex items-center gap-2"
+        >
+          <i data-lucide="github" class="w-5 h-5"></i> Code
+        </a>
+
         <a
           href="https://www.kaggle.com/datasets/hearfool/vggface2"
-          class="nav-button"
-          >Dataset</a
+          class="nav-button flex items-center gap-2"
         >
-        <a href="./resources/CSTBIR-AAAI24Slides.pdf" class="nav-button"
-          >Slides</a
-        >
+          <i data-lucide="database" class="w-5 h-5"></i> Dataset
+        </a>
+
+        <a
+        href="resources/ppt.pdf"
+        download
+        class="nav-button flex items-center gap-2"
+      >
+        <i data-lucide="presentation" class="w-5 h-5"></i> Slides
+      </a>
+      
       </div>
     </nav>
 
@@ -120,6 +145,21 @@
           id="carouselTrack"
           class="flex transition-transform duration-700 ease-in-out"
         >
+          <img
+            src="resources/9.jpg"
+            class="w-full h-[400px] object-cover flex-shrink-0"
+            alt="Image 5"
+          />
+          <img
+            src="resources/7.jpg"
+            class="w-full h-[400px] object-cover flex-shrink-0"
+            alt="Image 5"
+          />
+          <img
+            src="resources/8.jpg"
+            class="w-full h-[400px] object-cover flex-shrink-0"
+            alt="Image 5"
+          />
           <img
             src="resources/4.jpg"
             class="w-full h-[400px] object-cover flex-shrink-0"
@@ -140,11 +180,6 @@
             class="w-full h-[400px] object-cover flex-shrink-0"
             alt="Image 4"
           />
-          <img
-            src="resources/5.jpg"
-            class="w-full h-[400px] object-cover flex-shrink-0"
-            alt="Image 5"
-          />
         </div>
 
         <!-- Controls -->
@@ -164,65 +199,57 @@
         <div class="space-y-4">
           <p class="text-gray-700 leading-relaxed">
             The primary goal of this project is to develop an
-            <i><b>efficient face identification system</b></i> that accurately
-            classifies a given face image into one of
-            <i><b>K distinct classes</b></i
-            >. This problem holds significant importance in various real-world
-            domains such as <i><b>security</b></i
-            >, <i><b>surveillance</b></i
-            >, and <i><b>human-computer interaction</b></i
-            >.
+            <i><span class="highlight-blue">efficient face identification system</span></i>
+            that accurately classifies a given face image into one of
+            <i><span class="highlight-blue">K distinct classes</span></i>.
+            This problem holds significant importance in various real-world domains such as
+            <i><span class="highlight-blue">security</span></i>,
+            <i><span class="highlight-blue">surveillance</span></i>, and
+            <i><span class="highlight-blue">human-computer interaction</span></i>.
           </p>
-
+        
           <p class="text-gray-700 leading-relaxed">
             A key application of this system is an
-            <i><b>automated attendance system</b></i
-            >, which we are actively developing. In this system, individuals'
-            attendance is marked in real-time using
-            <i><b>face recognition</b></i
-            >, thereby eliminating manual entry, reducing errors, and enhancing
-            both <i><b>security</b></i> and <i><b>efficiency</b></i
-            >.
+            <i><span class="highlight-blue">automated attendance system</span></i>,
+            which we are actively developing. In this system, individuals' attendance is marked in real-time using
+            <i><span class="highlight-blue">face recognition</span></i>, thereby eliminating manual entry,
+            reducing errors, and enhancing both
+            <i><span class="highlight-blue">security</span></i> and
+            <i><span class="highlight-blue">efficiency</span></i>.
           </p>
-
+        
           <p class="text-gray-700 leading-relaxed">
             Our approach involves capturing facial images at entry points,
-            followed by <i><b>preprocessing</b></i> steps such as
-            <i><b>face detection</b></i
-            >, <i><b>cropping</b></i
-            >, and <i><b>resizing</b></i
-            >. We extract features using techniques like
-            <i><b>Local Binary Patterns (LBP)</b></i
-            >, <i><b>Histogram of Oriented Gradients (HoG)</b></i
-            >, and deep features from
-            <i><b>Convolutional Neural Networks (CNN)</b></i
-            >. These features are then used for classification against a
-            <i><b>pre-registered facial database</b></i
-            >.
+            followed by <i><span class="highlight-blue">preprocessing</span></i> steps such as
+            <i><span class="highlight-blue">face detection</span></i>,
+            <i><span class="highlight-blue">cropping</span></i>, and
+            <i><span class="highlight-blue">resizing</span></i>. We extract features using techniques like
+            <i><span class="highlight-blue">Local Binary Patterns (LBP)</span></i>,
+            <i><span class="highlight-blue">Histogram of Oriented Gradients (HoG)</span></i>, and deep features from
+            <i><span class="highlight-blue">Convolutional Neural Networks (CNN)</span></i>. These features are then
+            used for classification against a
+            <i><span class="highlight-blue">pre-registered facial database</span></i>.
           </p>
-
+        
           <p class="text-gray-700 leading-relaxed">
             The system leverages traditional
-            <i><b>machine learning models</b></i> such as
-            <i><b>Support Vector Machines (SVM)</b></i
-            >, <i><b>Random Forests</b></i
-            >, and others, with extensive experimentation to compare their
-            <i><b>accuracy</b></i> and <i><b>efficiency</b></i
-            >.
+            <i><span class="highlight-blue">machine learning models</span></i> such as
+            <i><span class="highlight-blue">Support Vector Machines (SVM)</span></i>,
+            <i><span class="highlight-blue">Random Forests</span></i>, and others, with extensive experimentation to
+            compare their <i><span class="highlight-blue">accuracy</span></i> and
+            <i><span class="highlight-blue">efficiency</span></i>.
           </p>
-
+        
           <p class="text-gray-700 leading-relaxed">
             Initially, we started with the
-            <i><b>Labeled Faces in the Wild (LFW)</b></i> dataset, but due to
-            its limited number of images per class, it was unsuitable for
-            training robust classification models. Therefore, we transitioned to
-            a curated subset of the <i><b>VGGFace2</b></i> dataset, which
-            provides a higher number of images per individual and greater
-            variability in pose and lighting. Specifically, we selected
-            <i><b>50 classes with 300–350 images each</b></i
-            >, ensuring both <i><b>scalability</b></i> and
-            <i><b>computational feasibility</b></i
-            >.
+            <i><span class="highlight-blue">Labeled Faces in the Wild (LFW)</span></i> dataset, but due to its
+            limited number of images per class, it was unsuitable for training robust classification models.
+            Therefore, we transitioned to a curated subset of the
+            <i><span class="highlight-blue">VGGFace2</span></i> dataset, which provides a higher number of images per
+            individual and greater variability in pose and lighting. Specifically, we selected
+            <i><span class="highlight-blue">50 classes with 300–350 images each</span></i>, ensuring both
+            <i><span class="highlight-blue">scalability</span></i> and
+            <i><span class="highlight-blue">computational feasibility</span></i>.
           </p>
         </div>
       </section>
@@ -230,48 +257,65 @@
       <!-- Problem Statement -->
       <section class="mb-16 bg-white p-8 rounded-xl shadow-md">
         <h2 class="section-title text-3xl font-bold mb-6 text-blue-800">
-          The Problem
+          The Problem Statement & Solution
         </h2>
         <div class="text-center">
-          <img
-            src="./resources/intro.png"
-            alt="Problem visualization"
-            class="mx-auto max-w-full h-auto rounded-lg shadow-md mb-6"
-          />
-          <p class="text-gray-700 leading-relaxed">
-            The <b><i>Face Identification</i></b> problem plays a vital role in
-            various real-world applications such as <b><i>security</i></b> and
-            <b><i>automated attendance</i></b
-            >. A user may wish to verify their identity or mark attendance using
-            a captured face image; however, factors like <b><i>lighting</i></b
-            >, <b><i>pose</i></b
-            >, and <b><i>facial expressions</i></b> introduce significant
-            variability in the input. For example, a person entering a
-            controlled area might present their face at an angle or under poor
-            lighting conditions compared to their reference image. Therefore,
-            the system must effectively handle such variations using advanced
-            feature extraction methods like
-            <b><i>Histogram of Oriented Gradients (HoG)</i></b
-            >, <b><i>Local Binary Patterns (LBP)</i></b
-            >, and <b><i>Convolutional Neural Networks (CNN)</i></b
-            >, along with robust <b><i>machine learning models</i></b> to ensure
-            accurate identification despite these challenges.
-          </p>
+          <div class="arrow-container">
+            <img
+              src="./resources/10.jpg"
+              alt="Manual attendance"
+              class="problem-image"
+            />
+            <div class="arrow"></div>
+            <img
+              src="./resources/9.jpg"
+              alt="Face recognition solution"
+              class="solution-image"
+            />
+          </div>
+          <div class="problem-text">
+            <p>
+              Face identification plays a vital role in real-world applications
+              such as <b>security</b> and <b>automated attendance</b>. When a
+              user attempts to verify their identity or mark attendance, the
+              captured facial image might differ significantly from the
+              reference image due to variations in <b>lighting</b>, <b>pose</b>,
+              and <b>facial expressions</b>. For example, an individual entering
+              a secured area might present their face at an angle or under poor
+              lighting, making accurate recognition challenging.
+            </p>
+            <p>
+              To overcome these challenges, modern face identification
+              attendance systems employ advanced feature extraction methods and
+              robust machine learning models. Techniques such as
+              <b>Histogram of Oriented Gradients (HoG)</b>,
+              <b>Local Binary Patterns (LBP)</b>, and
+              <b>Convolutional Neural Networks (CNN)</b> are utilized to extract
+              discriminative features from face images. These features are then
+              processed by a variety of models—including <b>Decision Trees</b>,
+              <b>Random Forests</b>, <b>KNN</b>, <b>SVM</b>,
+              <b>Logistic Regression</b>, and ensemble approaches—to reliably
+              identify individuals under diverse conditions. This comprehensive
+              approach ensures high accuracy in attendance tracking even when
+              the input images exhibit significant variations.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- Video Section -->
       <section class="mb-16 bg-white p-8 rounded-xl shadow-md">
         <h2 class="section-title text-3xl font-bold mb-6 text-blue-800">
-          Short Talk
+          Youtube Video
         </h2>
         <div class="aspect-w-16 aspect-h-9">
           <iframe
-            class="w-full h-[500px] rounded-lg"
-            src="https://www.youtube.com/embed/M8JcMv7Rznw"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+          class="w-full h-[500px] rounded-lg"
+          src="https://www.youtube.com/embed/Iq36qJS63Eg"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        
         </div>
       </section>
 
